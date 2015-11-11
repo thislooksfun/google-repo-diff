@@ -1,7 +1,7 @@
 {
   "name": "google-repo-diff",
   "main": "./lib/main",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin for 'google-repo' that adds git diff status to the gutter",
   "keywords": [
     "google",
