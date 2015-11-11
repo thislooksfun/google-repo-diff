@@ -25,9 +25,15 @@ class GitDiffView
       @moveToNextDiff()
     @subscriptions.add atom.commands.add editorView, 'google-diff:move-to-previous-diff', =>
       @moveToPreviousDiff()
-
-    @subscriptions.add atom.config.onDidChange 'google-diff.showIconsInEditorGutter', =>
+    
+    @subscriptions.add atom.config.onDidChange 'git-diff.copySettingsFromGitDiff', =>
       @updateIconDecoration()
+    
+    @subscriptions.add atom.config.onDidChange 'git-diff.showIconsInEditorGutter', =>
+      @updateIconDecoration() if atom.config.get('google-diff.copySettingsFromGitDiff')
+        
+    @subscriptions.add atom.config.onDidChange 'google-diff.showIconsInEditorGutter', =>
+      @updateIconDecoration() unless atom.config.get('google-diff.copySettingsFromGitDiff')
 
     @subscriptions.add atom.config.onDidChange 'editor.showLineNumbers', =>
       @updateIconDecoration()
@@ -58,7 +64,8 @@ class GitDiffView
 
   updateIconDecoration: ->
     gutter = atom.views.getView(@editor).rootElement?.querySelector('.gutter')
-    if atom.config.get('editor.showLineNumbers') and atom.config.get('google-diff.showIconsInEditorGutter')
+    showIcons = if atom.config.get('google-diff.copySettingsFromGitDiff') then atom.config.get('git-diff.showIconsInEditorGutter') else atom.config.get('google-diff.showIconsInEditorGutter')
+    if atom.config.get('editor.showLineNumbers') and showIcons
       gutter?.classList.add('google-diff-icon')
     else
       gutter?.classList.remove('google-diff-icon')
