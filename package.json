@@ -1,0 +1,33 @@
+{
+  "name": "google-repo-diff",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Plugin for 'google-repo' that adds git diff status to the gutter",
+  "keywords": [
+    "google",
+    "repo",
+    "google-repo",
+    "diff"
+  ],
+  "activationCommands": {},
+  "repository": "https://github.com/thislooksfun/google-repo-diff",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "consumedServices": {
+    "google-repo": {
+      "versions": {
+        "^1.0.0": "consumeGoogleRepoServiceV1"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-dependencies": "latest",
+    "atom-space-pen-views": "^2.1.0",
+    "atom-utils": "^0.7.4"
+  },
+  "package-dependencies": {
+    "google-repo": "(Version tracking not implemented)"
+  }
+}

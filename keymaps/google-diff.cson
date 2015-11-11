@@ -1,0 +1,4 @@
+'atom-text-editor':
+  'alt-g down': 'google-diff:move-to-next-diff'
+  'alt-g up':   'google-diff:move-to-previous-diff'
+  'alt-g d':    'google-diff:toggle-diff-list'

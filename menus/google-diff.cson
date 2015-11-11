@@ -1,0 +1,13 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Google Diff'
+      'submenu': [
+        { 'label': 'Move to Next Diff',     'command': 'google-diff:move-to-next-diff' }
+        { 'label': 'Move to Previous Diff', 'command': 'google-diff:move-to-previous-diff' }
+        { 'label': 'Toggle Diff List',      'command': 'google-diff:toggle-diff-list' }
+      ]
+    ]
+  }
+]
