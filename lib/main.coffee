@@ -55,7 +55,7 @@ module.exports =
   
   
   observe: ->
-    atom.workspace.observeTextEditors (editor) ->
+    atom.workspace.observeTextEditors (editor) =>
       new GoogleDiffView(editor)  # Create a DiffView for this editor
       
       @toggleCommands[editor.getPath()] ?= atom.commands.add(atom.views.getView(editor), 'google-diff:toggle-diff-list', toggleGoogleList)  # Add the toggle command, if it doesn't already exist
