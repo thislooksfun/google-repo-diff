@@ -36,15 +36,11 @@ class GoogleListView extends SelectListView
     @setItems(diffs)
 
   toggle: ->
-    console.log "Toggling:"
     if @panel.isVisible()
-      console.log "  a"
       @cancel()
     else if @editor = atom.workspace.getActiveTextEditor()
-      console.log "  b"
       @populate()
       @attach()
-    console.log "  c"
 
   cancelled: ->
     @panel.hide()
