@@ -62,11 +62,11 @@ module.exports =
   
   
   # Called to check if this plugin is active
-  isActive: -> @active
+  gRepo_isActive: -> @active
   
   
   # Called when the 'google-repo' package activates this plugin
-  activatePlugin: ->
+  gRepo_activatePlugin: ->
     return if @active  # If the plugin is already activated, there's no point in continuing
     
     @active = true                                            # State that this plugin is now active
@@ -76,7 +76,7 @@ module.exports =
   
   
   # Called when the 'google-repo' package deactivates this plugin
-  deactivatePlugin: ->
+  gRepo_deactivatePlugin: ->
     return unless @active  # If the plugin is already deactivated, there's no point in continuing
     
     @active = false              # State that this plugin is no longer active
