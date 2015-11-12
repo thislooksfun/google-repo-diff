@@ -3,13 +3,13 @@
   "main": "./lib/main",
   "version": "1.0.2",
   "description": "Plugin for 'google-repo' that adds git diff status to the gutter",
+  "author": "thislooksfun",
   "keywords": [
     "google",
     "repo",
     "google-repo",
     "diff"
   ],
-  "activationCommands": {},
   "repository": "https://github.com/thislooksfun/google-repo-diff",
   "license": "MIT",
   "engines": {
@@ -23,7 +23,6 @@
     }
   },
   "dependencies": {
-    "atom-space-pen-views": "^2.1.0",
-    "atom-utils": "^0.7.4"
-  },
+    "atom-space-pen-views": "^2.1.0"
+  }
 }
