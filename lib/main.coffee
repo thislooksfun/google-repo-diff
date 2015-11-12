@@ -84,4 +84,4 @@ module.exports =
     @subscriptions = null        # Remove the subscriptions object
     for _, c of @toggleCommands  # For each toggle command...
       c.dispose()                #   Dispose of the object
-    @toggleCommands = {}       # Remove the list of toggle commands
+    @toggleCommands = {}         # Remove the list of toggle commands
