@@ -1,3 +1,6 @@
+## 1.0.3
+* Removed unused dependency
+
 ## 1.0.2
 * Fixed a bug that prevented the package from loading properly
 * Small tweaks
