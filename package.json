@@ -23,11 +23,7 @@
     }
   },
   "dependencies": {
-    "atom-package-dependencies": "latest",
     "atom-space-pen-views": "^2.1.0",
     "atom-utils": "^0.7.4"
   },
-  "package-dependencies": {
-    "google-repo": "(Version tracking not implemented)"
-  }
 }
