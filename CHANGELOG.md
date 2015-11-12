@@ -1,3 +1,6 @@
+## 1.1.0
+* Conformed to plugin activation and deactivation function being made google-repo specific
+
 ## 1.0.3
 * Removed unused dependency
 
