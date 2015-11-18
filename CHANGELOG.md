@@ -1,3 +1,6 @@
+## 1.1.1
+* Added link to 'google-repo-diff-minimap'
+
 ## 1.1.0
 * Conformed to plugin activation and deactivation function being made google-repo specific
 
